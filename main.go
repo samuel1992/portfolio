@@ -18,7 +18,17 @@ import (
 )
 
 const CODE_BLOCK_STYLE = "solarized-dark"
-const CSS_STYLE = "<style>div.container { max-width: 1000px; margin: auto; padding: 20px; border: 1px solid #ccc; box-shadow: 0 0 10px rgba(0,0,0,0.1); }</style>"
+const CSS_STYLE = `
+  <style>
+    div.container { 
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+    }
+  </style>
+`
 
 func main() {
 	buildCmd := flag.NewFlagSet("build", flag.ExitOnError)

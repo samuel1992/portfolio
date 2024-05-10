@@ -1,4 +1,6 @@
-## Tiny CMS
+# My Portfolio
 
-Main goal of this project is to create a simple and easy to use CMS for small websites. It is not meant to be a full featured CMS like WordPress or Joomla, but rather a simple tool to manage a small website.
-You should be able to write your pages in markdown and upload them to the server. The CMS will take care of the rest.
+The purpose of this project is to create a portfolio that showcases my work and skills. 
+This project includes a goland script that converts my markdown pages into html pages and also serves it on a local server.
+For that I'm using some go packages like `Goldmark` and some extensions of it.
+
