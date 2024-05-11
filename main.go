@@ -21,11 +21,34 @@ const CODE_BLOCK_STYLE = "solarized-dark"
 const CSS_STYLE = `
   <style>
     div.container { 
-      max-width: 1000px;
+      max-width: 80%;
       margin: auto;
+      margin-top: 30px;
       padding: 20px;
       border: 1px solid #ccc;
       box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+    }
+    /* Styling the navigation bar */
+    .navbar {
+        overflow: hidden;
+        background-color: #333;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Navigation links style */
+    .navbar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+    }
+
+    /* Change the color of links on hover */
+    .navbar a:hover {
+        background-color: #ddd;
+        color: black;
     }
   </style>
 `
@@ -96,8 +119,10 @@ func buildSite(inputDir, outputDir string) {
         <html>
           <head>%s</head>
           <body>
-           <div class='container'>
+           <div class='navbar'>
             <a href='/'>Home</a>
+           </div>
+           <div class='container'>
             %s
            </div>
           </body>
